@@ -1,0 +1,3 @@
+correlation_pair,pearson_r,p_value,r_lower_ci,r_upper_ci,hypothesis_supported,n
+d_prime_average vs. accuracy_overall,0.2484340212394683,0.0018272719837751706,0.09448346665888502,0.39077986294787564,False,155
+d_prime_average vs. rt_by_angle_slope,0.04866582557909801,0.5476157403437176,-0.10982788201058599,0.20474605268787086,False,155

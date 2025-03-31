@@ -1,0 +1,4 @@
+VA_measure,VA_condition,VVIQ2_measure,pearson_r,p_value,r_lower_ci,r_upper_ci,hypothesis_supported,n
+set_size_effect_delay1,Set size effect at delay 1s,total_score,-0.018542258053873745,0.8212192299441746,-0.17774430033162222,0.14160561133657085,False,151
+set_size_effect_delay3,Set size effect at delay 3s,total_score,-0.08820487591478818,0.28149213299932074,-0.24448878722691103,0.0725456801370622,False,151
+avg_set_size_effect,Average set size effect,total_score,-0.07617145454340443,0.35258662209554414,-0.23306429184656424,0.08458615637171893,False,151

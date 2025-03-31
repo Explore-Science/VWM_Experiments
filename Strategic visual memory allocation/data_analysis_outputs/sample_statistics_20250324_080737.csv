@@ -1,0 +1,27 @@
+Statistic_name,Value,Category,Percentage
+Age_Mean,27.234096692111958,Age,NA
+Age_SD,4.8282922320818455,Age,NA
+Age_Min,18.0,Age,NA
+Age_Max,35.0,Age,NA
+Age_Median,27.0,Age,NA
+Sex_Count,208.0,Female,52.926208651399484
+Sex_Count,183.0,Male,46.56488549618321
+Sex_Count,2.0,Prefer not to say,0.5089058524173028
+Country_Count,298.0,United States,75.82697201017811
+Country_Count,95.0,United Kingdom,24.173027989821882
+Student_Status_Count,242.0,No,61.57760814249363
+Student_Status_Count,120.0,Yes,30.53435114503817
+Employment_Status_Count,153.0,Full-Time,38.93129770992366
+Employment_Status_Count,100.0,Part-Time,25.44529262086514
+Employment_Status_Count,57.0,Unemployed (and job seeking),14.50381679389313
+Employment_Status_Count,21.0,Other,5.343511450381679
+Employment_Status_Count,19.0,"Not in paid work (e.g. homemaker', 'retired or disabled)",4.8346055979643765
+Employment_Status_Count,5.0,Due to start a new job within the next month,1.2722646310432568
+Time_Taken_Mean_Minutes,41.974342663273966,Time,NA
+Time_Taken_SD_Minutes,16.101480448904525,Time,NA
+Time_Taken_Min_Minutes,20.416666666666668,Time,NA
+Time_Taken_Max_Minutes,105.38333333333334,Time,NA
+Total_Approved_Participants,393.0,Sample,NA
+Total_Included_Participants,393.0,Sample,NA
+Target_Sample_Size,91.0,Sample,NA
+Percentage_Target_Achieved,431.86813186813185,Sample,431.86813186813185

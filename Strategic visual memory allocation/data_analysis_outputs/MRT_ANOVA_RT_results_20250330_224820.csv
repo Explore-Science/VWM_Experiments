@@ -1,0 +1,2 @@
+effect,F_value,df_numerator,df_denominator,p_value,partial_eta_squared,partial_eta_squared_lower_ci,partial_eta_squared_upper_ci,significance_indicator
+angular_disparity,659.0258344957956,3,693,1.9111319254586375e-202,0.27313807540239493,0.22313807540239494,0.3231380754023949,True

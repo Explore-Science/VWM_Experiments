@@ -1,0 +1,6 @@
+analysis_type,effect_size_type,small_threshold,medium_threshold,large_threshold,reporting_template,confidence_interval_method
+ANOVA,partial_eta_squared,0.01,0.06,0.14,"The effect of {effect} was {interpretation} (ηp² = {value:.3f}, 95% CI [{lower:.3f}, {upper:.3f}]).",Non-central F distribution
+Pairwise comparison,cohens_d,0.2,0.5,0.8,"The {effect} comparison showed a {interpretation} effect (d = {value:.3f}, 95% CI [{lower:.3f}, {upper:.3f}]).",Standard error approximation
+Correlation,pearson_r,0.1,0.3,0.5,"The correlation between {var1} and {var2} was {interpretation} (r = {value:.3f}, 95% CI [{lower:.3f}, {upper:.3f}]).",Fisher's Z transformation
+Regression,r_squared,0.01,0.09,0.25,"The model explained a {interpretation} amount of variance (R² = {value:.3f}, 95% CI [{lower:.3f}, {upper:.3f}]).",Bootstrap
+Regression,standardized_beta,0.1,0.3,0.5,"The effect of {predictor} was {interpretation} (β = {value:.3f}, 95% CI [{lower:.3f}, {upper:.3f}]).",Bootstrap

@@ -1,0 +1,226 @@
+<pre-registration>
+    <metadata>
+        <title>Strategic Allocation of Visual Working Memory Resources in Mental Rotation: Examining Complex Visuospatial Relationships Across Task Demands</title>
+        <description>This study investigates how selective visual working memory for orientation information relates to mental rotation efficiency across varying task demands, and examines whether individual differences in visual imagery vividness are associated with distinct performance patterns across both tasks.</description>
+        <contributors>Primary Investigator and research team from the Department of Psychology</contributors>
+
+        <license type="select_one">CC-By Attribution 4.0 International</license>
+
+        <subject>Cognitive Psychology, Visual Working Memory, Mental Rotation, Visuospatial Processing, Individual Differences</subject>
+        <tags>visual working memory, mental rotation, imagery vividness, selective attention, visuospatial cognition, orientation change detection</tags>
+    </metadata>
+
+    <study_information>
+        <hypotheses>1. Participants with better selective visual working memory performance for orientation information (higher d-prime across set sizes and delay conditions in the Visual Arrays Task) will demonstrate more efficient mental rotation (higher accuracy and shallower RT-by-angle slopes). We predict a moderate positive correlation (r ≥ 0.30) between Visual Arrays Task d-prime and Mental Rotation Task accuracy, and a moderate negative correlation (r ≤ -0.30) between Visual Arrays Task d-prime and Mental Rotation Task RT slopes. These correlations are predicted based on shared attentional selection mechanisms required for both tasks. (Directional)
+
+2. The relationship between visual working memory and mental rotation performance will be modulated by task complexity, with stronger correlations in more demanding conditions. Specifically, we predict that the correlation magnitude between Visual Arrays Task performance and Mental Rotation Task performance will be significantly stronger (difference in r ≥ 0.15) when comparing: (a) set size 5 vs. set size 3 conditions; (b) 3s vs. 1s delay conditions; and (c) larger angular disparities (100°, 150°) vs. smaller angular disparities (0°, 50°). This hypothesis is derived from research showing that attentional resource limitations become more evident under higher cognitive load (Lavie, 2005). (Directional)
+
+3. Individuals with higher imagery vividness (VVIQ2 scores) will show differential performance patterns across tasks. Specifically:
+   a. Higher VVIQ2 scores will predict stronger set-size effects in the Visual Arrays Task (difference in d-prime between set size 3 and set size 5 conditions). We predict a moderate positive correlation (r ≥ 0.25) between VVIQ2 scores and set-size effects. This relationship is hypothesized because individuals with more vivid imagery may encode more detailed visual representations, making them more susceptible to capacity limitations when set size increases (Keogh & Pearson, 2018). (Directional)
+   
+   b. Higher VVIQ2 scores will predict steeper RT-by-angle slopes with higher accuracy in the Mental Rotation Task. We predict a moderate positive correlation (r ≥ 0.25) between VVIQ2 scores and RT-by-angle slopes, and a moderate positive correlation (r ≥ 0.25) between VVIQ2 scores and overall Mental Rotation accuracy. This pattern would reflect a more systematic imagery-based transformation strategy rather than analytical feature-matching, as suggested by research showing that high-imagery individuals tend to use more holistic rotation strategies (Logie et al., 2011). (Directional)</hypotheses>
+    </study_information>
+
+    <design_plan>
+        <study_type type="select_one">Experiment</study_type>
+
+        <blinding type="select_multiple">No blinding is involved in this study.</blinding>
+        
+        <study_design>This study employs a within-subjects design with all participants completing two cognitive tasks and one questionnaire:
+
+1. Visual Arrays Task with a 2×2 within-subjects factorial design:
+   - Set Size: 3 vs. 5 colored rectangles of each color
+   - Delay: 1s vs. 3s retention interval
+   - The dependent variable is d-prime sensitivity for detecting orientation changes in cued rectangles
+   
+2. Mental Rotation Task with one within-subjects factor:
+   - Angular Disparity: 0°, 50°, 100°, 150°
+   - The dependent variables are accuracy and response time for same/different judgments of 3D objects
+   
+3. VVIQ2 questionnaire measuring visual imagery vividness
+
+The tasks will be counterbalanced across participants to control for order effects. Each participant completes all conditions of both tasks, allowing for within-subject comparisons across all task parameters.</study_design>
+        
+        <randomization>The presentation order of the two cognitive tasks (Visual Arrays Task and Mental Rotation Task) will be counterbalanced across participants using PsychoJS JavaScript code: 'shuffle = util.shuffle; TaskOrders = [1, 2]; shuffle(TaskOrders); Order = TaskOrders.pop();'. This randomization occurs at the beginning of the experiment and determines whether participants complete the Visual Arrays Task first (Order=1) or the Mental Rotation Task first (Order=2).
+
+Within each task, trial order will be randomized, with each condition (set size × delay combinations for Visual Arrays; angular disparities for Mental Rotation) presented an equal number of times in a fully randomized sequence. The VVIQ2 questionnaire will always be administered last, after both cognitive tasks are completed.</randomization>
+    </design_plan>
+
+    <sampling_plan>
+        <existing_data type="select_one">Registration prior to creation of data</existing_data>
+        
+        <data_collection_procedures>Participants will be recruited through Prolific using the following pre-screening criteria: age 18-40 years, balanced gender distribution, normal/corrected vision, English fluency, desktop/laptop access, and no self-reported neurological/psychiatric conditions.
+
+The study will be implemented online using Pavlovia.org with PsychoJS. Participants will complete the study on their own computers in full-screen mode. The experiment will consist of:
+
+1. Visual Arrays Task: Participants will be presented with arrays of blue and red rectangles at various orientations (0°, 45°, -45°, or 90°). A color cue ("BLUE" or "RED") will indicate which rectangles to attend to. After a delay (1s or 3s), a second array will appear with a white dot on one target-colored rectangle. Participants must indicate whether this rectangle has changed orientation compared to the first array by pressing "5" (same) or "6" (different). The task includes practice trials with feedback followed by 112 experimental trials (16 trials × 7 blocks) without feedback.
+
+2. Mental Rotation Task: Participants will view pairs of 3D block figures at different angular disparities (0°, 50°, 100°, 150°) and judge whether they are the same object rotated or different objects by pressing "b" (same) or "n" (different). The task includes 20 practice trials followed by 96 experimental trials (48 trials × 2 blocks).
+
+3. VVIQ2 Questionnaire: Participants will complete the 32-item questionnaire measuring the vividness of visual imagery across eight scenarios.
+
+Participants will be compensated £6.00 for approximately 40 minutes of participation (£9/hour rate).</data_collection_procedures>
+        
+        <sample_size>91 adult participants (ages 18-40, balanced gender)</sample_size>
+        
+        <sample_size_rationale>A power analysis was conducted using the pwr package in R for repeated measures ANOVA with within-factors interaction. Based on previous research examining visual working memory and mental rotation relationships (Hyun & Luck, 2007; Prime & Jolicoeur, 2010), we assumed a medium effect size (f = 0.25). With parameters set to α = 0.05, power = 0.95, number of groups = 1, number of measurements = 4 (corresponding to the four angular disparities: 0°, 50°, 100°, 150°), the required sample size is 70 participants.
+
+We increased this by 30% to account for anticipated data exclusions from online testing, yielding a final sample size of 91 participants. This sample size is sufficient for detecting medium effect sizes in our primary analyses, including the repeated-measures ANOVAs for both tasks and the correlation analyses between tasks. For the correlation analyses (assuming r = 0.30, α = 0.05, power = 0.80), a sample size of 84 is required, which is covered by our planned sample of 91.
+
+The power analysis focused on the repeated measures ANOVA as this requires the largest sample size among our planned analyses. While we will conduct multiple correlation analyses, the sample size of 91 provides adequate power for detecting correlations of r ≥ 0.30 with appropriate multiple comparison corrections.</sample_size_rationale>
+        
+        <stopping_rule>Data collection will continue until we reach 91 valid completions. We will recruit participants in batches of 30, reviewing data quality after each batch. If the exclusion rate exceeds 30% in the initial batches, we will increase the target sample size proportionally to maintain adequate statistical power. The study will remain active on Prolific until the required sample size is achieved.</stopping_rule>
+    </sampling_plan>
+
+    <variables>
+        <manipulated_variables>1. Visual Arrays Task:
+   - Set Size: 3 vs. 5 colored rectangles of each color (target and distractor) presented in the memory array
+   - Delay Duration: 1s vs. 3s retention interval between memory array and test array
+   - Trial Type: Same vs. Different (whether the cued rectangle's orientation changes between arrays)
+   - Target Color: Blue vs. Red (counterbalanced across trials)
+
+2. Mental Rotation Task:
+   - Angular Disparity: 0°, 50°, 100°, 150° rotation between object pairs
+   - Trial Type: Same vs. Different (whether objects are identical but rotated or different objects)</manipulated_variables>
+        
+        <measured_variables>1. Visual Arrays Task:
+   - Hit Rate: Proportion of "different" responses on different trials (when orientation actually changed)
+   - False Alarm Rate: Proportion of "different" responses on same trials (when orientation did not change)
+   - d-prime: Sensitivity index calculated for each combination of set size and delay
+   - Response Time: Time taken to respond on each trial (though not a primary outcome measure)
+
+2. Mental Rotation Task:
+   - Accuracy: Proportion of correct responses for each angular disparity
+   - Response Time (RT): Mean RT for correct trials only at each angular disparity
+   - RT-by-angle slope: Linear slope coefficient from regression of RT on angular disparity
+   - RT intercept: Y-intercept from regression of RT on angular disparity
+
+3. VVIQ2 Questionnaire:
+   - Total score: Sum of all 32 items (range 32-160)
+   - Eight subscale scores corresponding to different imagery scenarios (range 4-20 each)</measured_variables>
+        
+        <indices>1. Visual Arrays Task indices:
+   - d-prime sensitivity scores will be calculated for each combination of set size and delay using the formula: d' = z(hit rate) - z(false alarm rate). For perfect performance, hit rates of 1 will be adjusted to 1-1/(2N) and false alarm rates of 0 will be adjusted to 1/(2N), where N is the number of trials in that condition.
+   - Set size effect will be calculated as: d'(set size 3) - d'(set size 5) for each delay condition
+   - Delay effect will be calculated as: d'(1s delay) - d'(3s delay) for each set size condition
+
+2. Mental Rotation Task indices:
+   - RT-by-angle slope will be calculated for each participant using linear regression with angular disparity as the predictor and RT as the outcome, using the formula: RT = slope × angle + intercept
+   - Mean accuracy will be calculated for each angular disparity condition
+
+3. VVIQ2 index:
+   - Total VVIQ2 score will be calculated as the sum of all 32 items
+   - For participants with minimal missing data (<10%), missing values will be imputed using the mean of completed items within the same scenario</indices>
+    </variables>
+
+    <analysis_plan>
+        <statistical_models>1. Visual Arrays Task Analysis:
+   - 2×2 repeated-measures ANOVA with set size (3, 5) and delay (1s, 3s) as within-subject factors and d-prime as the dependent variable
+   - Prior to analysis, we will test for normality using Shapiro-Wilk tests and for sphericity using Mauchly's test
+   - If sphericity is violated, we will apply Greenhouse-Geisser corrections
+   - If normality is severely violated, we will transform the data or use non-parametric alternatives (Friedman test)
+   - Post-hoc pairwise comparisons will be conducted with Bonferroni correction
+
+2. Mental Rotation Task Analysis:
+   - Two separate repeated-measures ANOVAs with angular disparity (0°, 50°, 100°, 150°) as a within-subject factor:
+     a. Analysis of accuracy (proportion correct)
+     b. Analysis of response time (correct trials only)
+   - Prior to analysis, we will test for normality and sphericity as described above
+   - Linear regression of RT on angular disparity for each participant to calculate slopes
+   - Post-hoc pairwise comparisons will be conducted with Bonferroni correction
+
+3. Cross-Task Relationship Analysis:
+   - Pearson correlations between d-prime scores from each Visual Arrays condition (set size × delay) and Mental Rotation performance metrics (accuracy and RT) at each angular disparity
+   - We will compute 16 specific correlations: 4 Visual Arrays conditions (2 set sizes × 2 delays) × 4 angular disparities, separately for accuracy and RT
+   - False Discovery Rate (FDR) correction will be applied to control for multiple comparisons
+   - Comparison of correlation coefficients across conditions using Fisher's r-to-z transformation to test Hypothesis 2
+   - Specifically, we will compare correlations between:
+     a. Set size 3 vs. set size 5 conditions (averaged across delays)
+     b. 1s delay vs. 3s delay conditions (averaged across set sizes)
+     c. Smaller angles (0°, 50°) vs. larger angles (100°, 150°)
+
+4. Moderation Analysis:
+   - Pearson correlations between VVIQ2 scores and:
+     a. Set size effects in Visual Arrays Task (to test Hypothesis 3a)
+     b. RT-by-angle slopes in Mental Rotation Task (to test Hypothesis 3b)
+     c. Overall accuracy in Mental Rotation Task (to test Hypothesis 3b)
+   - Repeated-measures ANCOVA with set size (3, 5) and delay (1s, 3s) as within-subject factors, VVIQ2 score as a continuous covariate, and d-prime as the dependent variable
+   - Repeated-measures ANCOVA with angular disparity (0°, 50°, 100°, 150°) as a within-subject factor, VVIQ2 score as a continuous covariate, and RT/accuracy as dependent variables
+   - For significant interactions involving VVIQ2 scores, we will conduct simple slopes analyses at ±1SD from the mean VVIQ2 score</statistical_models>
+        
+        <transformations>1. For the Visual Arrays Task, d-prime scores will be calculated using the formula: d' = z(hit rate) - z(false alarm rate). To handle extreme values:
+   - Hit rates of 1 will be adjusted to 1-1/(2N)
+   - False alarm rates of 0 will be adjusted to 1/(2N)
+   - Where N is the number of trials in that condition
+
+2. For the Mental Rotation Task, RT data will be filtered to remove outliers:
+   - Trials with RTs <200ms will be excluded entirely
+   - Trials with RTs >3SD from the participant's mean within each angular disparity condition will be removed entirely, not winsorized
+
+3. For the VVIQ2 questionnaire, if participants have minimal missing data (<10%), missing values will be imputed using the mean of their completed items within the same scenario.
+
+4. For correlation analyses involving VVIQ2 scores, the scores will be z-standardized to facilitate interpretation of moderation effects.
+
+5. No other transformations will be applied unless severe violations of statistical assumptions require them, in which case they will be clearly documented in the results.</transformations>
+        
+        <inference_criteria>We will use a significance threshold of α = .05 for all analyses. For ANOVAs, we will report F-statistics, degrees of freedom, p-values, and partial eta-squared (ηp²) effect sizes with 95% confidence intervals. For t-tests and pairwise comparisons, we will report t-statistics, degrees of freedom, p-values, and Cohen's d with 95% confidence intervals. For correlations, we will report Pearson's r with 95% confidence intervals.
+
+All tests will be two-tailed unless specifically noted in the hypotheses section. For multiple comparisons in the cross-task correlation analysis, we will apply the False Discovery Rate (FDR) correction with q = .05. For post-hoc comparisons following significant ANOVA effects, we will use Bonferroni corrections.
+
+For testing Hypothesis 1, we will consider correlations with |r| ≥ 0.30 as support for the predicted relationship between visual working memory and mental rotation performance.
+
+For testing Hypothesis 2, we will compare correlation coefficients using Fisher's r-to-z transformation and consider differences of z ≥ 0.15 as support for the predicted modulation by task complexity.
+
+For testing Hypothesis 3, we will consider correlations with |r| ≥ 0.25 as support for the predicted relationships between imagery vividness and task performance patterns.
+
+All correlation analyses will be conducted on the full sample, not on median-split or categorized groups.</inference_criteria>
+        
+        <data_exclusion>1. Participant-level exclusions:
+   - Participants with <60% overall accuracy on either the Visual Arrays Task or Mental Rotation Task will be excluded
+   - Participants showing evidence of disengagement, defined objectively as:
+     a. Identical responses for >10 consecutive trials
+     b. Response times <200ms on >10% of trials
+     c. Response time standard deviation <100ms across all trials (indicating automated responding)
+   - Participants missing >25% of trials in any condition
+   - Participants who complete the entire study in <15 minutes (based on Prolific timestamps)
+
+2. Trial-level exclusions:
+   - Visual Arrays Task: Trials with RTs <200ms or >10,000ms will be excluded
+   - Mental Rotation Task: Trials with RTs <200ms or >7,500ms will be excluded
+   - Trials with RTs >3SD from the participant's mean within each condition will be removed entirely
+
+3. Data quality documentation:
+   - We will report the number of participants excluded for each criterion
+   - We will report the number of trials excluded for each criterion
+   - We will compare demographic characteristics of included versus excluded participants
+   - We will record the average frameRate value automatically measured by PsychoJS but will not use it as an exclusion criterion
+
+All exclusion criteria are established a priori and will be applied uniformly to all participants and conditions.</data_exclusion>
+        
+        <missing_data>For the Visual Arrays and Mental Rotation tasks, participants missing >25% of trials in any condition will be excluded from analysis. For participants with less missing data, analyses will proceed with available data without imputation for these task measures.
+
+For the VVIQ2 questionnaire, if participants are missing <10% of items, missing values will be imputed using the mean of their completed items within the same scenario. If participants are missing >10% of VVIQ2 items, they will be excluded from analyses involving imagery vividness but retained for other analyses.
+
+To determine if missing data patterns are systematic, we will conduct Little's MCAR (Missing Completely At Random) test. If data are not MCAR, we will report this limitation and interpret results with appropriate caution.
+
+No other imputation methods will be used for missing data.</missing_data>
+        
+        <exploratory_analysis>1. We will explore whether performance patterns differ between participants with high versus low VVIQ2 scores by examining the distribution of VVIQ2 scores and identifying potential clusters using hierarchical cluster analysis.
+
+2. We will explore whether the relationship between Visual Arrays and Mental Rotation performance varies as a function of trial difficulty using multilevel modeling with participants as random factors and task conditions as fixed factors.
+
+3. We will explore potential gender differences in task performance and in the relationship between visual working memory and mental rotation abilities.
+
+4. We will investigate whether specific VVIQ2 subscales (representing different imagery scenarios) show stronger relationships with task performance than the overall score.
+
+5. We will conduct reliability analyses for both cognitive tasks by calculating split-half reliability coefficients (Spearman-Brown corrected) for the Visual Arrays Task d-prime scores and Mental Rotation Task accuracy and RT measures.
+
+6. We will explore the relationship between response time variability and performance accuracy as a potential indicator of attentional fluctuations or strategy differences.</exploratory_analysis>
+    </analysis_plan>
+
+    <other>This study builds on the theoretical frameworks of Feature Integration Theory (Treisman, 1980), capacity-based models of visual working memory (Luck & Vogel, 2013), and strategic variation in spatial processing (Just & Carpenter, 1985). Key references include Shepard & Metzler's (1971) seminal work on mental rotation, Pearson et al.'s (2015) research on imagery vividness, and Logie et al.'s (2011) integrated frameworks of visuospatial cognition.
+
+The Visual Arrays Task in this study specifically measures selective attention to orientation information, not color change detection. This is critical for testing our hypotheses about the relationship between orientation processing in working memory and mental rotation efficiency, as both involve visuospatial transformation processes.
+
+All analyses will be conducted using R (version 4.1.0 or later) with the following packages: tidyverse for data manipulation, afex for ANOVA models, lme4 for multilevel modeling, psych for reliability analyses, and pwr for post-hoc power calculations. All data and analysis scripts will be made available on OSF upon study completion.</other>
+</pre-registration>

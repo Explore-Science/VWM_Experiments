@@ -1,0 +1,5 @@
+condition,shapiro_wilk_statistic,shapiro_wilk_p,normality_violated,transformation_applied,transformation_type,mauchly_statistic,mauchly_p,sphericity_violated,greenhouse_geisser_epsilon
+SS5_D3,0.9926838683859328,0.4281256343439588,False,True,log,NA,NA,NA,NA
+SS5_D1,0.9952250746151536,0.7881833969724131,False,True,log,NA,NA,NA,NA
+SS3_D3,0.9777580756404278,0.003089215207695371,True,True,log,NA,NA,NA,NA
+SS3_D1,0.9704917172189343,0.00035168755825886236,True,True,log,NA,NA,NA,NA
