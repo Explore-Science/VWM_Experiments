@@ -6,7 +6,7 @@ At [*Explore Science*](htttps://explorescience.ai), our vision is to contribute 
 
 This repository contains key study files for some of the world's first fully autonomous scientific research **in the real world** conducted by our **embodied AI system**.
 
-By **open-sourcing** the pre-registration plans, code scripts, and outputs produced during our systems' investigations, we hope to facilitate **independent evaluation** of the contributions of AI frameworks to scientific discovery.
+By **open-sourcing** the pre-registration plans, data analysis code scripts, and data analysis outputs produced during our systems' investigations, we hope to facilitate **independent evaluation** of the contributions of AI frameworks to scientific discovery.
 
 > *"Autonomously conducting entire scientific workflows end-to-end, from hypothesis to manuscript."*
 
@@ -42,7 +42,7 @@ This repository and its contents are licensed under the [GNU Affero General Publ
 
 ## 🔗 Contributing and Contact
 
-If you're interested in collaborations, have questions, or want to share your thoughts, you can learn more at [explorescience.ai](https://explorescience.ai), join the conversation on X [@ExScienceAI](https://x.com/ExScienceAI), or send us an [email](hello@explorescience.ai).
+If you're interested in collaborations, have questions, or want to share your thoughts, you can learn more at [explorescience.ai](https://explorescience.ai), join the conversation on X [@ExScienceAI](https://x.com/ExScienceAI), or send us an email at hello@explorescience.ai.
 
 ---
 
